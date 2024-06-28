@@ -1,0 +1,145 @@
+/* scroller */
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ff6600;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ef6101fa;
+}
+
+/* nav bar */
+.navbar .logo {
+  width: 20%;
+  /* margin-right: 20px; */
+}
+.navbar .logo img {
+  width: 100%;
+  margin-left: 30%;
+}
+.navbar .bars {
+  display: none;
+}
+.bars i {
+  font-size: 40px;
+  padding: 0px 80px;
+  color: #4f4d64;
+  border: #89889e solid 3px;
+  border-radius: 15px;
+  margin: 20px;
+  padding: 10px;
+}
+.navbar .links {
+  width: 70%;
+  padding-left: 0px;
+  display: flex;
+  align-items: center;
+}
+.links li {
+  list-style-type: none;
+  margin: 30px;
+}
+
+.links li a {
+  color: #4f4d64;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.links a img {
+  width: 200px;
+}
+.links li a:hover {
+  color: #ff6600;
+}
+
+.Home-page {
+  height: 100vh;
+}
+
+/* first section in all pages */
+.Home {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  margin-bottom: 40px;
+  background-image: url(../img/page-header.jpg);
+}
+.Home .inn_div {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.555);
+  padding: 100px 100px;
+}
+.Home .inn_div h1 {
+  font-weight: 700;
+  font-size: 60px;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 50px;
+}
+.Home .inn_div a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  margin-right: 5px;
+}
+.Home .inn_div a:hover {
+  text-decoration: underline;
+}
+.Home .inn_div p {
+  font-size: 25px;
+  color: white;
+  display: inline-block;
+}
+.clicked {
+  border-radius: 2px;
+  border-bottom: 2px solid #ff6600;
+  box-shadow: 5px 10px 5px #aaaaaa;
+}
+
+@media screen and (max-width: 990px) {
+  .navbar .bars {
+    display: block;
+  }
+  .navbar .none {
+    display: none;
+  }
+
+  .txt {
+    padding: 110px;
+  }
+
+    
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+      display: flex !important;
+      flex-basis: auto;
+      margin-left: 150px;
+  }
+}
+@media screen and (max-width: 795) {
+  .about{
+  }
+}
+@media screen and (max-width: 480px) {
+  .Home .inn_div h1 {
+    font-size: 40px;
+  }
+}

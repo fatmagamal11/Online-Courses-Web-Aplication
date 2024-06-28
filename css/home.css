@@ -1,0 +1,51 @@
+.carousel-item {
+    position: relative;
+}
+
+.txt {
+    position: absolute;
+    padding: 260px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 0.5 opacity */
+    z-index: 1; /* Make sure it's above the image but below any text or other content */
+}
+.txt span {
+    color: white;
+    margin: 50px 0;
+    font-size: 20px;
+    font-weight: 300;
+}
+.txt button:hover{
+    width: 150.5px;
+    height: 61px;
+    color: #2e2d347a;
+    transition: width 0.5s,height 0.5s;
+}
+.txt button{
+    background-color: #ff6600;
+    border: none;
+    font-size: 20px;
+    border-radius: 10px;
+    height: 50px;
+    color: antiquewhite;
+    width: 150px;
+}
+.txt h1 {
+width: 600px;
+margin: 30px 0;
+height: auto;
+font-size: 60px;
+font-weight: 800;
+}
+
+.carousel-item img {
+    position: relative; /* Ensure the image is still positioned correctly */
+    z-index: 0; /* Make sure the image is below the cover */
+}
+.contain{
+    margin: 150px 20px;
+}
